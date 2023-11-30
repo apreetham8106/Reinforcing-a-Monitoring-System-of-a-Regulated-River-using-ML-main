@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flood Prediction System</title>
+    <link rel="stylesheet" href="../static/css/style.css">
+</head>
+<body background="../static/img/flood.jpg">
+    <div>
+    <h1>Flood Prediction System</h1>
+
+    <p>
+        <h3>Enter a date (yyyy-mm-dd) to predict the occurrence of a flood:</h3>
+    </p>
+    <form action="{{url_for('predict')}}" id="prediction-form" method="POST">
+    
+        <input type="date" name="date" id="input-date" required>
+        <!-- <input type="text" name="gage_height"> -->
+        <br><br><br><br>
+    </input type="Gauge gage_height" id= "input-gage">
+        <input type="submit" value="Predict">
+    </form>
+</div>
+</body>
+</html>
